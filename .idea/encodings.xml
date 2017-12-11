@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-dubbo/dubbo-consumer-one" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-dubbo/dubbo-consumer-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-dubbo/dubbo-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-dubbo/dubbo-service-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-manager/web-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-parent/comm-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/comm-utility" charset="UTF-8" />
+  </component>
+</project>

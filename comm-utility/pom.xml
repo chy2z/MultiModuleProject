@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>comm-parent</artifactId>
+        <groupId>com.chy</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../comm-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>comm-utility</artifactId>
+    <version>${com-utility.version}</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <!--版本号在上级项目中已经指定-->
+            <!-- <version>${joda-time.version}</version>-->
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}-${com-utility.version}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- 源码插件 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <!-- 发布时自动将源码同时发布的配置 -->
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>target/</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+
+
+        <!--
+        项目自动上传maven仓库
+        mvn clean compile package deploy
+        -->
+
+        <!--
+        手工将jar上传maven仓库
+        mvn deploy:deploy-file -DgroupId=com.chy -DartifactId=comm-utility -Dversion=1.0-SNAPSHOT -Dpackaging=jar -Dfile=G:\java\intellij_idea\IdeaProjects\MultiModuleProject\comm-utility\target\comm-utility-1.0-SNAPSHOT.jar -Durl=http://ek-nexus.eakay.cn/nexus/content/repositories/snapshots -DrepositoryId=snapshots
+         -->
+
+    </build>
+</project>

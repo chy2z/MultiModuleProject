@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/comm-dubbo/comm-dubbo.iml" filepath="$PROJECT_DIR$/comm-dubbo/comm-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-manager/comm-manager.iml" filepath="$PROJECT_DIR$/comm-manager/comm-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-parent/comm-parent.iml" filepath="$PROJECT_DIR$/comm-parent/comm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-utility/comm-utility.iml" filepath="$PROJECT_DIR$/comm-utility/comm-utility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-dubbo/dubbo-consumer-one/dubbo-consumer-one.iml" filepath="$PROJECT_DIR$/comm-dubbo/dubbo-consumer-one/dubbo-consumer-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-dubbo/dubbo-consumer-web/dubbo-consumer-web.iml" filepath="$PROJECT_DIR$/comm-dubbo/dubbo-consumer-web/dubbo-consumer-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-dubbo/dubbo-service/dubbo-service.iml" filepath="$PROJECT_DIR$/comm-dubbo/dubbo-service/dubbo-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-dubbo/dubbo-service-web/dubbo-service-web.iml" filepath="$PROJECT_DIR$/comm-dubbo/dubbo-service-web/dubbo-service-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-manager/web-app/web-app.iml" filepath="$PROJECT_DIR$/comm-manager/web-app/web-app.iml" />
+    </modules>
+  </component>
+</project>
