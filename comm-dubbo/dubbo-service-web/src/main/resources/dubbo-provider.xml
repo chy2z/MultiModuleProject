@@ -19,7 +19,7 @@
 <dubbo:protocol name="dubbo" port="20880" />
 
 <!-- 用户服务接口 -->
-<dubbo:service interface="com.chy.service.HelloService"  ref="helloService" />
+<dubbo:service interface="com.chy.service.HelloService" group="myweb" version="1.0.0" ref="helloService" />
 
     <!--
     duboo不能解决不同开发语言调用接口的问题,

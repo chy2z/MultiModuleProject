@@ -11,9 +11,9 @@
 
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <!-- 注册中心地址 -->
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+    <dubbo:registry protocol="zookeeper"  address="127.0.0.1:2181" />
 
     <!-- 用户服务接口，和服务类名对应 -->
-    <dubbo:reference interface="com.chy.service.HelloService"  id="helloService" />
+    <dubbo:reference interface="com.chy.service.HelloService" group="myserver" version="1.0.0" id="helloService" />
 
 </beans>

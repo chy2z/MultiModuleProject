@@ -14,6 +14,6 @@
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 
     <!-- 用户服务接口，和服务类名对应 -->
-    <dubbo:reference interface="com.chy.service.HelloService"  id="helloService" />
+    <dubbo:reference interface="com.chy.service.HelloService"  group="myweb" version="1.0.0" id="helloService" />
 
 </beans>

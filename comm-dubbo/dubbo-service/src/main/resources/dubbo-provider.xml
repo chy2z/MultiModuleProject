@@ -16,10 +16,10 @@
 </dubbo:registry>
 
 <!-- 用dubbo协议在20881端口暴露服务 -->
-<dubbo:protocol name="dubbo" port="20881" />
+<dubbo:protocol name="dubbo"  port="20881" />
 
 <!-- 用户服务接口 -->
-<dubbo:service interface="com.chy.service.HelloService"  ref="helloService" />
+<dubbo:service interface="com.chy.service.HelloService"  group="myserver" version="1.0.0" ref="helloService" />
 
     <!--
     duboo不能解决不同开发语言调用接口的问题,
